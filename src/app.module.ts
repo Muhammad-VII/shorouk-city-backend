@@ -23,7 +23,7 @@ import { SharedModule } from './shared/shared.module';
     HttpModule,
     ThrottlerModule.forRoot({
       ttl: 5,
-      limit: 5
+      limit: 5,
     }),
     SharedModule,
   ],
