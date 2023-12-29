@@ -16,7 +16,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     HomeModule,
     MongooseModule.forRoot(
-      `mongodb+srv://akmalDbManger:B0Pq6x0BZgOAoswh@cluster0.q5thcov.mongodb.net/My-city?retryWrites=true&w=majority`,
+      `mongodb+srv://akmalDbManger:Bc17tTsDVanLRNer@cluster0.q5thcov.mongodb.net/My-city?retryWrites=true&w=majority`,
     ),
     AuthModule,
     UsersModule,
