@@ -28,7 +28,6 @@ export class SharedService {
     documentsToSkip = 0,
     limitToDocuments?: number,
   ): Promise<any> {
-    console.log(await this.offersModel.find());
     const query = await this.offersModel
       .find()
       .sort({ _id: 1 })
