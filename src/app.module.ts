@@ -17,10 +17,7 @@ import { SharedModule } from './shared/shared.module';
     HomeModule,
     MongooseModule.forRoot(
       `mongodb+srv://akmalDbManger:Bc17tTsDVanLRNer@cluster0.vrv70pt.mongodb.net/?retryWrites=true&w=majority`,
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    }),
+    ),
     AuthModule,
     UsersModule,
     HttpModule,
