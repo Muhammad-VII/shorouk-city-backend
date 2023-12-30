@@ -2,7 +2,6 @@
 /dist
 /node_modules
 /src/auth/jwt-constant.ts
-.env
 # Logs
 logs
 *.log

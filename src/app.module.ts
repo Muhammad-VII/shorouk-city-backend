@@ -11,12 +11,16 @@ import { ThrottlerModule } from '@nestjs/throttler';
 import { ChatGateway } from './gateways/event.gateway';
 import { HttpModule } from '@nestjs/axios';
 import { SharedModule } from './shared/shared.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
     HomeModule,
     MongooseModule.forRoot(
-      `mongodb+srv://akmalDbManger:Bc17tTsDVanLRNer@cluster0.vrv70pt.mongodb.net/shorouk-db?retryWrites=true&w=majority`,
+      process.env.DB_URI,
     ),
     AuthModule,
     UsersModule,
